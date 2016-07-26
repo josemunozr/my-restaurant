@@ -5,6 +5,7 @@
     %title La mejor comida de la ciudad
     %meta{name:"description", content:"Come rico y barato en el mejor restaurante de la ciudad"}
     %link{rel:"stylesheet", href:"css/normalize.css"}
+    %link{rel:"stylesheet", href:"css/style.css"}
     %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
     %script{src:"js/vendor/modernizr.min.js"}
   %body
@@ -16,5 +17,8 @@
       %a{href:"http://browsehappy.com/"}
         actualiza tu navegador para una mejor experiencia.
     ="<![endif]-->"
-    %h1 Hola Mundo
+    .video-container
+      %video{autoplay:true, loop:true}
+        %source{src:"/videos/mp4/out-camping.mp4", typ:"video/mp4"}
+        %source{src:"/videos/webm/out-camping.webm", typ:"video/webm"}
   
