@@ -96,7 +96,7 @@ textarea {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  position: relative;
+  position: absolute;
   video {
     // cubre toda la pantalla
     min-width: 100%;
@@ -132,6 +132,26 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.white-text {
+  color: white;
+}
+
+.relative {
+  position: relative;
+}
+.up {
+  z-index: 5;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
 
 /*
  * Hide visually and from screen readers
