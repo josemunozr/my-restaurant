@@ -102,13 +102,27 @@ textarea {
   transform: translate(-50%, -50%);
 }
 
+.navigation li {
+  padding: 5px 10px;
+  transition: all 0.4s;
+}
+
+.navigation li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation li a {
+  color: white;
+}
+
+.navigation li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-.no-margin {
-  margin: 0;
-}
-
 .white-text {
   color: white;
 }
@@ -121,8 +135,24 @@ textarea {
   font-size: 4em;
 }
 
+.medium, .navigation li {
+  font-size: 1.5em;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
+}
+
+.top {
+  top: 3em;
+}
+
+.rigth {
+  right: 5em;
 }
 
 .up {
@@ -131,6 +161,10 @@ textarea {
 
 .full-height {
   height: 100%;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .row {

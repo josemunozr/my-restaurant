@@ -6,6 +6,7 @@
     %meta{name:"description", content:"Come rico y barato en el mejor restaurante de la ciudad"}
     %link{href:"https://fonts.googleapis.com/css?family=Dancing+Script",rel:"stylesheet", type:"text/css"}
     %link{rel:"stylesheet", href:"css/normalize.css"}
+    %link{rel:"stylesheet", href:"css/bootstrap.css"}
     %link{rel:"stylesheet", href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css"}
     %link{rel:"stylesheet", href:"css/style.css"}
     %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
@@ -29,3 +30,9 @@
           %image{src:"/imgs/logo.png", width:200}
           %h1.dancing-script.title.no-margin  My Restorant
           %p#is-open Abierto ahora
+      %nav.fixed.top.rigth.navigation.white-text#navigation
+        -menu = ["Inicio", "Menú", "Galería", "Contacto", "Cómo llegar"]
+        %ul.list-inline
+          -menu.each do |item|
+            %li
+              %a= item

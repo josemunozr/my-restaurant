@@ -115,10 +115,23 @@ textarea {
   }
 } 
 
-
-
-
-
+.navigation {
+  li {
+    @extend .medium;
+    padding: 5px 10px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: rgba(0,0,0,0.3)
+    }
+    a{
+      color: white;
+      &:hover {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
 
 
 
@@ -133,10 +146,6 @@ textarea {
    Helper classes
    ========================================================================== */
 
-.no-margin {
-  margin: 0;
-}
-
 .white-text {
   color: white;
 }
@@ -149,15 +158,35 @@ textarea {
   font-size: 4em;
 }
 
+.medium {
+  font-size: 1.5em;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .relative {
   position: relative;
 }
+
+.top {
+  top: 3em;
+}
+.rigth {
+  right: 5em;
+}
+
 .up {
   z-index: 5;
 }
 
 .full-height {
   height: 100%;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .row {
