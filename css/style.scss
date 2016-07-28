@@ -124,10 +124,10 @@ textarea {
       background-color: rgba(0,0,0,0.3)
     }
     a{
+      cursor: pointer;  
       color: white;
       &:hover {
         text-decoration: none;
-        cursor: pointer;
       }
     }
   }
@@ -146,6 +146,10 @@ textarea {
    Helper classes
    ========================================================================== */
 
+.black{
+  background-color: #222;
+}
+
 .white-text {
   color: white;
 }
@@ -162,6 +166,14 @@ textarea {
   font-size: 1.5em;
 }
 
+.large-padding {
+  padding: 10px 15px;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .fixed {
   position: fixed;
 }
@@ -170,9 +182,20 @@ textarea {
   position: relative;
 }
 
+.bottom {
+  bottom: 0px;
+}
 .top {
   top: 3em;
 }
+
+.left--0 {
+  left: 0px;
+}
+.rigth--0{
+  right: 0px;
+}
+
 .rigth {
   right: 5em;
 }
@@ -183,6 +206,10 @@ textarea {
 
 .full-height {
   height: 100%;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .no-margin {

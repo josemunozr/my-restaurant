@@ -112,17 +112,21 @@ textarea {
 }
 
 .navigation li a {
+  cursor: pointer;
   color: white;
 }
 
 .navigation li a:hover {
   text-decoration: none;
-  cursor: pointer;
 }
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+.black {
+  background-color: #222;
+}
+
 .white-text {
   color: white;
 }
@@ -139,6 +143,14 @@ textarea {
   font-size: 1.5em;
 }
 
+.large-padding {
+  padding: 10px 15px;
+}
+
+.absolute {
+  position: absolute;
+}
+
 .fixed {
   position: fixed;
 }
@@ -147,8 +159,20 @@ textarea {
   position: relative;
 }
 
+.bottom {
+  bottom: 0px;
+}
+
 .top {
   top: 3em;
+}
+
+.left--0 {
+  left: 0px;
+}
+
+.rigth--0 {
+  right: 0px;
 }
 
 .rigth {
@@ -161,6 +185,10 @@ textarea {
 
 .full-height {
   height: 100%;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .no-margin {
