@@ -39,5 +39,20 @@
           -menu.each do |item|
             %li
               %a{}= item
-      .absolute.medium.black.large-padding.white-text.bottom.rigth--0.left--0#description
-        Atención, calidad y la mejor comida
+      .absolute.black.large-padding.white-text.rigth--0.left--0#description
+        .row.middle-xs.center-xs
+          .col-xs-7.col-sm-6.white-text.medium
+            Atención, calidad y la mejor comida
+          .col-xs.hidden#stiky-navigation
+            .box
+              %nav.text-right.navigation
+                %ul.list-inline.no-margin
+                  -menu.each do |item|
+                    %li
+                      %a{}= item
+    .full-height
+
+
+    %script{src:"https://code.jquery.com/jquery-3.1.0.min.js",    integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
+    %script{src:"dist/js/index.js"}
+

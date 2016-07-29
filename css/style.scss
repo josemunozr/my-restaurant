@@ -134,7 +134,14 @@ textarea {
 }
 
 
-
+#description {
+  &.absolute {
+    bottom: 0px;
+  }
+  &.fixed {
+    top: 0px;
+  }
+}
 
 
 
@@ -216,6 +223,10 @@ textarea {
   margin: 0;
 }
 
+.no-margin--bottom {
+  margin-bottom: 0px;
+}
+
 .row {
   margin: 0;
 }
@@ -226,7 +237,7 @@ textarea {
  */
 
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 /*
