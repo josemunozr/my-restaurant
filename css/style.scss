@@ -160,7 +160,7 @@ textarea {
     background-color: rgba(0,0,0,0.8);
     height: 100%;
     width: 100%;
-    transition: top 0.8s;
+    transition: top 0.4s;
   }
 }
 
@@ -186,6 +186,10 @@ textarea {
 
 .title {
   font-size: 4em;
+}
+
+.subtitle {
+  font-size: 2.5em;
 }
 
 .medium {
