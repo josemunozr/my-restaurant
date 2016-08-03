@@ -50,7 +50,9 @@
                   -menu.each do |item|
                     %li
                       %a{}= item
-    .text-center#menu
+    .text-center.relative#menu
+      .absolute.white#menu-title
+        %h2.dancing-script.title Menú
       -menu_photos = [{name: "Club Sandwich", precing: "10.000", image: "club-sandwich"},{name: "Combo Hamburguesa", precing: "50.000", image: "combo"},{name: "Hamburguesa", precing: "20.000", image: "hamburger"},{name: "Hot Cakes", precing: "30.000", image: "hot-cakes"},{name: "Panini", precing: "15.000", image: "panini"},{name: "Papas", precing: "10.000", image: "papas"},{name: "Club Sandwich", precing: "10.000", image: "club-sandwich"},{name: "Hamburguesa", precing: "20.000", image: "hamburger"}]
     
       .row

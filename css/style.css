@@ -149,11 +149,22 @@ textarea {
   transition: top 0.4s;
 }
 
+#menu-title {
+  width: 300px;
+  z-index: 5;
+  top: calc(50% - 2.5em);
+  left: calc(50% - 150px);
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 .black {
   background-color: #222;
+}
+
+.white {
+  background-color: #fff;
 }
 
 .white-text {
