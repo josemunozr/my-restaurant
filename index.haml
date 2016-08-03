@@ -55,8 +55,7 @@
     
       .row
         -menu_photos.each do |photo|
-          .col-md-4.col-lg-3.col-sm-6.col-xs-12.food
-            %img{src:"/imgs/food/#{photo[:image]}-thumb.jpg"}
+          .col-md-4.col-lg-3.col-sm-6.col-xs-12.food{style:"background-image:url(/imgs/food/#{photo[:image]}-thumb.jpg)"}
 
     %script{src:"https://code.jquery.com/jquery-3.1.0.min.js",    integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
     %script{src:"dist/js/index.js"}
