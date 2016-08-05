@@ -6,7 +6,6 @@
   var currentPosition = 0;
 
   var imageCounter = $("[data-name='image-counter']").attr("content");
-  console.log(imageCounter);
 
   $("#stiky-navigation").removeClass("hidden");
   $("#stiky-navigation").slideUp(0);

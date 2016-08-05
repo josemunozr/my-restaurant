@@ -191,10 +191,21 @@ textarea {
   }
 }
 
+.container {
+  .card {
+    margin-top: -200px;
+    padding: 2em;
+  }
+}
+
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+.card {
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
 
 .black{
   background-color: #222;
@@ -208,8 +219,16 @@ textarea {
   color: white;
 }
 
+.black-text {
+  color: #000;
+}
+
 .dancing-script {
   font-family: 'Dancing Script', cursive;
+}
+
+.slim {
+  font-weight: 200;
 }
 
 .title {
@@ -245,6 +264,10 @@ textarea {
 }
 .top {
   top: 3em;
+}
+
+.top-space{
+  margin-top: 2em;
 }
 
 .left--0 {
