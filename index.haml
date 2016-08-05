@@ -1,5 +1,6 @@
+-gallery_images = ["club-sandwich.jpg","combo.jpg","hamburger.jpg","panini.jpg"]
 !!!5
-%html{class:"no-js", lang:"es"}
+%html{class:"no-js", lang:"es"} 
   %head
     %meta{charset:"utf-8"}
     %title La mejor comida de la ciudad
@@ -11,6 +12,7 @@
     %link{rel:"stylesheet", href:"https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css"}
     %link{rel:"stylesheet", href:"css/style.css"}
     %meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+    %meta{:"data-name" => "image-counter", content:"#{gallery_images.size - 1}"}
     %script{src:"js/vendor/modernizr.min.js"}
   %body
     ="<!--[if lt IE 9]>"
@@ -63,6 +65,10 @@
                 .col-xs-12
                   %h3.dancing-script.white-text.subtitle= photo[:name]
                   %p.no-margin.white-text= photo[:precing] + "CLP"
+    #gallery
+      .inner
+        -gallery_images.each do |image|
+          .image{style:"background-image:url(/imgs/food/#{image})"}
 
     %script{src:"https://code.jquery.com/jquery-3.1.0.min.js",    integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
     %script{src:"dist/js/index.js"}
