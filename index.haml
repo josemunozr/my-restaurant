@@ -84,7 +84,7 @@
       .row.middle-xs.full-height
         .col-xs-12
           .box
-            %form{action:"https://formspree.io/jozeepp@gmail.com", method:"POST"}
+            %form#contact-form{action:"https://formspree.io/jozeepp@gmail.com", method:"POST"}
               .row.center-xs
                 .col-xs-2.col-md-1
                   .box
@@ -98,5 +98,6 @@
 
 
     %script{src:"https://code.jquery.com/jquery-3.1.0.min.js",    integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
+    %script{src:"dist/form_object.js"}
     %script{src:"dist/js/index.js"}
 

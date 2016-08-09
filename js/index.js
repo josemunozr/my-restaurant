@@ -4,7 +4,15 @@
   let currentPosition = 0
 
   const imageCounter = $("[data-name='image-counter']").attr("content")
+  const email = "jozeepp@gmail.com"
   
+  $("#contact-form").on("submit", function (ev) {
+    ev.preventDefault()
+
+    sendForm($(this))
+
+    return false
+  })
 
   $("#stiky-navigation").removeClass("hidden")
   $("#stiky-navigation").slideUp(0)
@@ -53,6 +61,16 @@
     const descriptionHeight = $description.height()
 
     return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2)
+  }
+
+  function sendForm($form) {
+    console.log($form.formObject())
+    $.ajax({
+        url: $form.attr("action"),
+        method: "POST",
+        data: $form.formObject(),
+        dataType: "json"
+    })
   }
 
 })()
