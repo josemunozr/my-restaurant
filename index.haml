@@ -79,7 +79,22 @@
         %p.top-space
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quos atque minus, mollitia dicta similique natus at corporis. Modi soluta eos harum ipsum, sed ducimus optio non nulla earum similique.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam debitis illum expedita dolorum, iste nam at totam odit atque facilis dolores beatae nisi maxime corporis ullam quae, voluptatem esse perspiciatis.
           %strong.dancing-script.medium Asd - Chef
-  
+    
+    .black.white-text.full-height#contact
+      .row.middle-xs.full-height
+        .col-xs-12
+          .box
+            %form.black-text{action:"", method:""}
+              .row
+                .col-xs-2.col-md-1
+                  .box
+                .col-xs-5
+                  .box
+                    %input{type:"email", name:"email", placeholder:"Agrega tu correo electronico"}
+                    %input{type:"text", name:"name", placeholder:"Agrega tu nombre"}
+                    %textarea{name:"body", placeholder:"Agrega tu mensaje"}
+
+
     %script{src:"https://code.jquery.com/jquery-3.1.0.min.js",    integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
     %script{src:"dist/js/index.js"}
 
