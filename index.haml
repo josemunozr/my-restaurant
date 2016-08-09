@@ -84,7 +84,7 @@
       .row.middle-xs.full-height
         .col-xs-12
           .box
-            %form{action:"", method:""}
+            %form{action:"https://formspree.io/jozeepp@gmail.com", method:"POST"}
               .row.center-xs
                 .col-xs-2.col-md-1
                   .box
@@ -93,6 +93,8 @@
                     %input{type:"email", name:"email", placeholder:"Agrega tu correo electronico"}
                     %input{type:"text", name:"name", placeholder:"Agrega tu nombre"}
                     %textarea{name:"body", placeholder:"Agrega tu mensaje"}
+                    %button.btn.btn-success{type:"submit"}
+                      Enviar
 
 
     %script{src:"https://code.jquery.com/jquery-3.1.0.min.js",    integrity:"sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=", crossorigin:"anonymous"}
