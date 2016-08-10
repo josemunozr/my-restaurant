@@ -205,19 +205,34 @@
       <div class='row middle-xs full-height'>
         <div class='col-xs-12'>
           <div class='box'>
-            <form action='https://formspree.io/jozeepp@gmail.com' id='contact-form' method='POST'>
+            <form action='https://formspree.io/jozeepp@gmail.com' class='step-form' id='contact-form' method='POST'>
               <div class='row center-xs'>
-                <div class='col-xs-2 col-md-1'>
-                  <div class='box'></div>
+                <div class='col-xs-2 col-md-1 text-center'>
+                  <div class='box'>
+                    <div class='path-step'></div>
+                    <br>
+                    <div class='path-step'></div>
+                    <br>
+                    <div class='path-step'></div>
+                    <br>
+                  </div>
                 </div>
                 <div class='col-xs-5'>
                   <div class='box'>
-                    <input name='email' placeholder='Agrega tu correo electronico' type='email'>
-                    <input name='name' placeholder='Agrega tu nombre' type='text'>
-                    <textarea name='body' placeholder='Agrega tu mensaje'></textarea>
-                    <button class='btn btn-success' type='submit'>
-                      Enviar
-                    </button>
+                    <fieldset class='step active'>
+                      <input class='input' name='email' placeholder='Agrega tu correo electronico' required type='email'>
+                    </fieldset>
+                    <fieldset class='step'>
+                      <input class='input' name='name' placeholder='Agrega tu nombre' required type='text'>
+                    </fieldset>
+                    <fieldset class='step'>
+                      <textarea class='input' name='body' placeholder='Agrega tu mensaje' required></textarea>
+                    </fieldset>
+                    <div>
+                      <button class='btn btn-success' type='submit'>
+                        Enviar
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -227,7 +242,8 @@
       </div>
     </div>
     <script crossorigin='anonymous' integrity='sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=' src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-    <script src='dist/form_object.js'></script>
-    <script src='dist/js/index.js'></script>
+    <script src='/dist/js/form_object.js'></script>
+    <script src='/dist/js/index.js'></script>
+    <script src='/dist/js/steps.js'></script>
   </body>
 </html>

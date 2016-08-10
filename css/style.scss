@@ -202,14 +202,38 @@ textarea {
   margin-top: -200px;
 }
 
-input, textarea {
-  font-size: 2em;
-  padding: 0.5em;
-  border: none;
-  outline: none;
-  border-bottom: solid 1px #eee;
-  background-color: transparent;
-  width: 100%;
+
+.path-step {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #a2a2a2;
+  margin-top: 2em;
+  display: inline-block;
+  opacity: 0.4s;
+}
+
+.step-form {
+  .step {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.4s;
+    padding: 1em 0.5em;
+    margin: 0px;
+    &.active {
+      max-height: 150px;
+    }
+
+    input, textarea {
+      font-size: 2em;
+      padding: 0.5em;
+      border: none;
+      outline: none;
+      border-bottom: solid 1px #eee;
+      background-color: transparent;
+      width: 100%;
+    }
+  }
 }
 
 /* ==========================================================================
