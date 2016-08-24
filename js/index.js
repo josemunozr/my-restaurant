@@ -63,17 +63,4 @@
     return $(window).scrollTop() > $(window).height() - (descriptionHeight * 2)
   }
 
-  function sendForm($form) {
-
-    $.ajax({
-        url: $form.attr("action"),
-        method: "POST",
-        data: $form.formObject(),
-        dataType: "json"
-    })
-    .then(function () {
-      console.log("Email enviado")
-    })
-  }
-
 })()

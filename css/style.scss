@@ -211,6 +211,18 @@ textarea {
   margin-top: 2em;
   display: inline-block;
   opacity: 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 0px 5px rgba(250,250,250,0.8);
+    opacity: 0.9;
+  }
+
+  &.active {
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(250,250,250,0.8)
+  }
 }
 
 .step-form {
@@ -218,9 +230,9 @@ textarea {
     max-height: 0px;
     overflow: hidden;
     transition: all 0.4s;
-    padding: 1em 0.5em;
     margin: 0px;
     &.active {
+      padding: 1em 0.5em;
       max-height: 150px;
     }
 
