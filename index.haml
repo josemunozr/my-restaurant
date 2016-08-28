@@ -104,7 +104,12 @@
                       %input.input{type:"text", name:"name", placeholder:"Nombre", required: true}
                     %fieldset.step
                       %textarea.input{name:"body", placeholder:"Mensaje", required: true}
+    #location
+      #map
+
+    %script{src:"https://maps.googleapis.com/maps/api/js?key=AIzaSyDzamJTNwZ_WwXwpH-hmonK-aGhERtTQCE"}
     %script{src:"/js/vendor/jquery.min.js"}
+    %script{src:"/dist/js/maps.js"}
     %script{src:"/dist/js/form_object.js"}
     %script{src:"/dist/js/index.js"}
     %script{src:"/dist/js/steps.js"}
