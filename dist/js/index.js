@@ -23,6 +23,7 @@
   $("#stiky-navigation").removeClass("hidden");
   $("#stiky-navigation").slideUp(0);
   checkScroll();
+  isOpen();
 
   $(".menu-opener").on("click", toggleNav);
 
@@ -53,6 +54,15 @@
     if (!inBottom && sticky) {
       sticky = false; // Ocultar nevagacion stiky
       stickNavigation(false);
+    }
+  }
+
+  function isOpen() {
+    var date = new Date();
+    var current_hour = date.getHours();
+    // abre a las 17 hrs y cierra a las 23 hrs
+    if (current_hour < 17 || current_hour > 23) {
+      $("#is-open .text").html("Cerrado ahora <br> Abierto de 5:00pm a 11:00pm");
     }
   }
 
