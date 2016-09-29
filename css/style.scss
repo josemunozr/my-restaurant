@@ -167,7 +167,7 @@ textarea {
 
 #menu-title {
   width: 300px;
-  z-index: 5; 
+  z-index: 4; 
   top: calc(50% - 2.5em);
   left: calc(50% - 150px);
 }
@@ -455,6 +455,13 @@ textarea {
       top: 80px!important;
     }
   }
+}
+
+@media only screen and (max-height: 600px) {
+  #contact, .container .card{
+    margin-top: -15%;
+  }
+
 }
 
 @media only screen and (max-width: 960px) {

@@ -21,10 +21,9 @@
   $("#stiky-navigation").removeClass("hidden")
   $("#stiky-navigation").slideUp(0)
 
-  $(".menu-opener").on('click', function () {
-    $('.nav-responsive ul').toggleClass('active')
-    $(this).toggleClass('fa-bars')
-  })
+  $(".menu-opener").on('click', toggleNav)
+
+  $('.menu-link').on('click', toggleNav)
 
   setInterval(() => {
     if(currentPosition < imageCounter){
@@ -52,6 +51,11 @@
       stickNavigation(false)
     }
   })
+
+  function toggleNav () {
+    $('.nav-responsive ul').toggleClass('active')
+    $('.menu-opener').toggleClass('fa-bars')
+  }
 
   function stickNavigation(inBottom) {
     if(inBottom){

@@ -36,11 +36,11 @@
             %i.fa.fa-clock-o
             Abierto ahora
       %nav.fixed.top.rigth.navigation.white-text#navigation
-        -menu = ["Inicio", "Menú", "Galería", "Contacto", "Cómo llegar"]
+        -menu = [{title:"Inicio", link:"#home"},{title:"Menú", link:"#menu"}, {title:"Galería", link:"#gallery"}, {title:"Contacto", link:"#contact"}, {title:"Cómo llegar", link:"#location"}]
         %ul.list-inline
           -menu.each do |item|
             %li
-              %a{}= item
+              %a{href:item[:link]}= item[:title]
       .absolute.black.large-padding.white-text.rigth--0.left--0#description
         .row.middle-xs.center-xs
           .col-xs-7.col-sm-6.white-text.medium
@@ -52,7 +52,7 @@
                 %ul.list-inline.no-margin
                   -menu.each do |item|
                     %li
-                      %a{}= item
+                      %a.menu-link{href:item[:link]}= item[:title]
     .text-center.relative#menu
       .absolute.white#menu-title
         %h2.dancing-script.title Menú
