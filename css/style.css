@@ -438,6 +438,9 @@ textarea {
 }
 
 @media only screen and (max-width: 960px) {
+  #navigation {
+    display: none !important;
+  }
   .menu-opener {
     display: block;
   }

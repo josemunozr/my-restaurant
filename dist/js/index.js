@@ -22,6 +22,7 @@
 
   $("#stiky-navigation").removeClass("hidden");
   $("#stiky-navigation").slideUp(0);
+  checkScroll();
 
   $(".menu-opener").on("click", toggleNav);
 
@@ -39,7 +40,9 @@
     });
   }, 4000);
 
-  $(window).scroll(function () {
+  $(window).scroll(checkScroll);
+
+  function checkScroll() {
     var inBottom = isInBottom();
 
     if (inBottom && !sticky) {
@@ -51,7 +54,7 @@
       sticky = false; // Ocultar nevagacion stiky
       stickNavigation(false);
     }
-  });
+  }
 
   function toggleNav() {
     $(".nav-responsive ul").toggleClass("active");
