@@ -241,6 +241,10 @@ textarea {
   height: 500px;
 }
 
+.menu-opener {
+  display: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -420,6 +424,29 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 960px) {
+  .menu-opener {
+    display: block;
+  }
+  .nav-responsive ul {
+    position: absolute;
+    width: 100%;
+    font-size: 1.5em;
+    top: 95px;
+    background-color: #222;
+    left: 0px;
+    text-align: center;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.4s;
+  }
+  .nav-responsive ul li {
+    display: block;
+    margin-top: 1em;
+    padding: 10px 15px;
+  }
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

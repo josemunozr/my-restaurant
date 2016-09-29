@@ -10,7 +10,7 @@ self.addEventListener("install", function(ev){
 
 self.addEventListener("activate", function (ev) {
   ev.waitUntil(
-    caches.key()
+    caches.keys()
       .then(function (cache_names) {
         return Promise.all(
           cache_names.map(function (cache_name) {

@@ -1,8 +1,8 @@
-"use strict";
+/*if(navigator.serviceWorker) {
+  navigator.serviceWorker.register("/sw.js")
+}*/
 
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/sw.js");
-}
+"use strict";
 
 ;(function () {
 
