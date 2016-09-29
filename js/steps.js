@@ -57,7 +57,7 @@
     $next_step.find(".input").focus()
 
     // cordinar circles
-    const position = ($next_step.index(".step") * 2 ) + 1
+    const position = ($next_step.index(".step") ) + 1
 
     
     const $circle = $(".path-step:nth-child("+ position +")").addClass("active")

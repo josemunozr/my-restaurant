@@ -90,15 +90,14 @@
               completar los campos y apretar enter para enviar datos
             %form#contact-form.step-form{action:"https://formspree.io/jozeepp@gmail.com", method:"POST"}
               .row.center-xs
-                .col-xs-2.col-md-1.text-center
+                .col-xs-12.col-sm-2.col-md-1.first-sm
                   .box
                     -3.times do |i|
                       -if i == 0
                         .path-step.active
                       -else
                         .path-step
-                      %br
-                .col-xs-5
+                .col-xs-12.col-sm-3.first-xs
                   .box
                     %fieldset.step.active
                       %input.input{type:"email", name:"email", placeholder:"Correo electronico", required: true}

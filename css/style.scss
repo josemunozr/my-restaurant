@@ -209,7 +209,7 @@ textarea {
   border-radius: 50%;
   background-color: #a2a2a2;
   margin-top: 2em;
-  display: inline-block;
+  display: block;
   opacity: 0.4s;
   transition: all 0.4s;
   cursor: pointer;
@@ -231,6 +231,7 @@ textarea {
     overflow: hidden;
     transition: all 0.4s;
     margin: 0px;
+    font-size: 0.8em;
     &.active {
       padding: 1em 0.5em;
       max-height: 150px;
@@ -459,6 +460,10 @@ textarea {
 @media only screen and (max-width: 960px) {
   .menu-opener{
     display: block;
+  }
+  .path-step{
+    display: inline-block;
+    margin-right: 1em;
   }
   .nav-responsive{
     ul{
