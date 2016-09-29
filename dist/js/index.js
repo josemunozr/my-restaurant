@@ -25,6 +25,7 @@
 
   $(".menu-opener").on("click", function () {
     $(".nav-responsive ul").toggleClass("active");
+    $(this).toggleClass("fa-bars");
   });
 
   setInterval(function () {
