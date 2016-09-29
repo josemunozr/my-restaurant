@@ -21,6 +21,10 @@
   $("#stiky-navigation").removeClass("hidden")
   $("#stiky-navigation").slideUp(0)
 
+  $(".menu-opener").on('click', function () {
+    $('.nav-responsive ul').toggleClass('active')
+  })
+
   setInterval(() => {
     if(currentPosition < imageCounter){
       currentPosition++
