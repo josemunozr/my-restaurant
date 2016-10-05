@@ -11,5 +11,8 @@
     "url": "\u001b[2~\u001b[2~https://github.com/josemunozr/my-restaurant.git"
   },
   "author": "José Muñoz R",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
